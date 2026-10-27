@@ -63,5 +63,12 @@ git branch -a	Показати локальні та віддалені гілк
 git switch --track origin/feature	Створити локальну гілку з віддаленої
 code .	Відкрити поточну папку у VS Code
 
-на іншому користувачу треба прив'язати локальну гілку до віддаленої
-git branch --set-upstream-to=origin/GitCommands GitCommands
+Створення локального і пуш на віддалений
+git switch -c database	
+git push -u origin database прив'язуємо локальну до віддаленої
+    git push — відправити коміти на віддалений репозиторій.
+    origin — твій GitHub-репозиторій.
+    database — локальна гілка, яку відправляємо.
+    -u (--set-upstream) — створити зв'язок між локальною та віддаленою гілками.
+git branch -vv перевіряємо зв'язок
+ dddd
