@@ -1,0 +1,25 @@
+-- Усі записи таблиці
+SELECT * FROM users;
+
+-- Вибрати конкретні стовпці
+SELECT username, role_name
+FROM users;
+
+-- Вибрати користувача за логіном
+SELECT *
+FROM users
+WHERE username = 'kirill';
+
+-- Сортування за логіном
+SELECT *
+FROM users
+ORDER BY username ASC;
+-- Додавання записів
+INSERT INTO roles (role_name, description)
+VALUES
+    ('viewer', 'Перегляд даних'),
+    ('operator', 'Оператор');
+-- Зміна данних
+UPDATE users
+SET role_name = 'admin'
+WHERE username = 'kirill'; 
